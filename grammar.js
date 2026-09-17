@@ -49,7 +49,7 @@ module.exports = grammar({
       prec.left(seq(repeat1(seq($._top_level_statement, $._line_terminator)), optional($._dollar))),
 
     package: $ =>
-      prec.left(seq(alias(/_package/i, '_package'), $._identifier, repeat($.fragment))),
+      prec.left(seq(alias(/_package/i, '_package'), $.identifier, repeat($.fragment))),
 
     _dollar: $ => token(seq('$', optional('\r'), '\n')),
 

@@ -7533,10 +7533,14 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": false,
+      "required": true,
       "types": [
         {
           "type": "fragment",
+          "named": true
+        },
+        {
+          "type": "identifier",
           "named": true
         }
       ]
